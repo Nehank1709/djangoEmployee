@@ -3,7 +3,7 @@ from django.conf import settings
 
 # Create your models here.
 class Employee(models.Model):
-    EmployeeId = models.AutoField(primary_key=True)
+    # EmployeeId = models.AutoField(primary_key=True)
     EmployeeName = models.CharField(max_length=50)
     EmployeeDepartment =models.CharField(max_length=50)
     # EmployeeAge = models.IntegerField(blank=True, null=True)

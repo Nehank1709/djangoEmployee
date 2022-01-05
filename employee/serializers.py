@@ -4,8 +4,8 @@ from .models import Employee
 
 class EmployeeSerializer(serializers.ModelSerializer):
     
-    EmployeeId = serializers.IntegerField()
-    EmployeeName = serializers.CharField(max_length=50)
+    # EmployeeId = serializers.IntegerField()
+    EmployeeName = serializers.CharField(max_length=50, default='null')
     EmployeeDepartment =serializers.CharField(max_length=50)
     EmployeeCity = serializers.CharField(max_length=40)
 
