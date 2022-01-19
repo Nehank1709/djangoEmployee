@@ -15,7 +15,7 @@ curl -X GET http://127.0.0.1:8000/api/employee/1 | python -m json.tool
 
 #PATCH:-
 
-curl -X PATCH http://127.0.0.1:8000/api/employee/15 -H 'Content-Type: application/json' -d '{"EmployeeDepartment":"Content"}'
+curl -X PATCH http://127.0.0.1:8000/api/employee/1 -H 'Content-Type: application/json' -d '{"EmployeeDepartment":"Content"}'
 
 #DELETE:-
 
