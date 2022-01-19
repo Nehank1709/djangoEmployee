@@ -1,0 +1,22 @@
+#POST:-
+
+curl -X POST -H "Content-Type: application/json" http://127.0.0.1:8000/api/employee/ -d "{\"EmployeeName\":\"Demo\",\"EmployeeDepartment\":\"Technology\",\"EmployeeCity\":\"Delhi\"}"
+
+#GET:-
+
+curl -X GET http://127.0.0.1:8000/api/employee/
+
+{pretty print}
+
+curl -X GET http://127.0.0.1:8000/api/employee/ | python -m json.tool
+
+{GET item using id}
+curl -X GET http://127.0.0.1:8000/api/employee/1 | python -m json.tool
+
+#PATCH:-
+
+curl -X PATCH http://127.0.0.1:8000/api/employee/15 -H 'Content-Type: application/json' -d '{"EmployeeDepartment":"Content"}'
+
+#DELETE:-
+
+curl -X "DELETE" http://127.0.0.1:8000/api/employee/1
