@@ -31,7 +31,9 @@ Installation Steps
 
 ***curls.txt*** - It contains the different curl commands for this project.
 
-#### employee contains the following files:
+---
+### employee contains the following files:
+---
 
 ***admin.py*** - It contains an entry for all the models defined, which can be viewed by the admin/superuser on the server's admin interface.
 
